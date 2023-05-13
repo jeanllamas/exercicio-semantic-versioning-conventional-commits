@@ -30,7 +30,7 @@ function calcularExponencial(base, expoente) {
 }
 
 function calcularRaizQuadrada(numero) {
-  return "O valor da raiz quadrada é: ";
+  return "O valor da raiz quadrada é: " + numero * numero;
 }
 
 
