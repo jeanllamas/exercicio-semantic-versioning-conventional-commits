@@ -12,7 +12,7 @@ function calcularBaskara(a, b, c) {
 }
 
 function calcularEquacaoReta(a, x, b) {
-  return "O valor de y é: ";
+  return "O valor de y é: " + a * x + b;
 }
 
 function calcularHipotenusa(a, b) {
