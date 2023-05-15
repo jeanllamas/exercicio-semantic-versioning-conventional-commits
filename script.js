@@ -12,7 +12,7 @@ function calcularBaskara(a, b, c) {
 }
 
 function calcularEquacaoReta(a, x, b) {
-  return "O valor de y é: ";
+  return "O valor de y é: " + a * x + b;
 }
 
 function calcularHipotenusa(a, b) {
@@ -30,7 +30,7 @@ function calcularExponencial(base, expoente) {
 }
 
 function calcularRaizQuadrada(numero) {
-  return "O valor da raiz quadrada é: ";
+  return "O valor da raiz quadrada é: " + numero * numero;
 }
 
 
