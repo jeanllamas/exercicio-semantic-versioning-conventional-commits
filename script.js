@@ -26,7 +26,7 @@ function calcularLogaritmo(base, numero) {
 }
 
 function calcularExponencial(base, expoente) {
-  return "O valor da exponencial é: ";
+  return "O valor da exponencial é: " + Math.pow(base, expoente);
 }
 
 function calcularRaizQuadrada(numero) {
