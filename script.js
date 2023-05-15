@@ -22,7 +22,7 @@ function calcularHipotenusa(a, b) {
 }
 
 function calcularLogaritmo(base, numero) {
-  return "O valor do logaritmo é: ";
+  return "O valor do logaritmo é: " + Math.log(numero) / Math.log(base);
 }
 
 function calcularExponencial(base, expoente) {
@@ -37,77 +37,77 @@ function calcularRaizQuadrada(numero) {
 // manipuladores de eventos para a página de Baskara
 var botaoBaskara = document.getElementById('calcularBaskara');
 if (botaoBaskara) {
-    botaoBaskara.addEventListener('click', function () {
-        var a = document.getElementById('a').value;
-        var b = document.getElementById('b').value;
-        var c = document.getElementById('c').value;
-        var resultado = calcularBaskara(a, b, c);
-        document.getElementById('resultadoBaskara').innerText = resultado;
-    });
+  botaoBaskara.addEventListener('click', function () {
+    var a = document.getElementById('a').value;
+    var b = document.getElementById('b').value;
+    var c = document.getElementById('c').value;
+    var resultado = calcularBaskara(a, b, c);
+    document.getElementById('resultadoBaskara').innerText = resultado;
+  });
 }
 
 // manipuladores de eventos para a página de Equação da Reta
 var botaoEquacaoReta = document.getElementById('calcularEquacaoReta');
 if (botaoEquacaoReta) {
-    botaoEquacaoReta.addEventListener('click', function () {
-        var a = document.getElementById('a').value;
-        var x = document.getElementById('x').value;
-        var b = document.getElementById('b').value;
-        var resultado = calcularEquacaoReta(a, x, b);
-        document.getElementById('resultadoEquacaoReta').innerText = resultado;
-    });
+  botaoEquacaoReta.addEventListener('click', function () {
+    var a = document.getElementById('a').value;
+    var x = document.getElementById('x').value;
+    var b = document.getElementById('b').value;
+    var resultado = calcularEquacaoReta(a, x, b);
+    document.getElementById('resultadoEquacaoReta').innerText = resultado;
+  });
 }
 
 // manipuladores de eventos para a página de Hipotenusa
 var botaoHipotenusa = document.getElementById('calcularHipotenusa');
 if (botaoHipotenusa) {
-    botaoHipotenusa.addEventListener('click', function () {
-        var a = document.getElementById('a').value;
-        var b = document.getElementById('b').value;
-        var resultado = calcularHipotenusa(a, b);
-        document.getElementById('resultadoHipotenusa').innerText = resultado;
-    });
+  botaoHipotenusa.addEventListener('click', function () {
+    var a = document.getElementById('a').value;
+    var b = document.getElementById('b').value;
+    var resultado = calcularHipotenusa(a, b);
+    document.getElementById('resultadoHipotenusa').innerText = resultado;
+  });
 }
 
 // manipuladores de eventos para a página de Logaritmo
 var botaoLogaritmo = document.getElementById('calcularLogaritmo');
 if (botaoLogaritmo) {
-    botaoLogaritmo.addEventListener('click', function () {
-        var base = document.getElementById('base').value;
-        var numero = document.getElementById('numero').value;
-        var resultado = calcularLogaritmo(base, numero);
-        document.getElementById('resultadoLogaritmo').innerText = resultado;
-    });
+  botaoLogaritmo.addEventListener('click', function () {
+    var base = document.getElementById('base').value;
+    var numero = document.getElementById('numero').value;
+    var resultado = calcularLogaritmo(base, numero);
+    document.getElementById('resultadoLogaritmo').innerText = resultado;
+  });
 }
 
 // manipuladores de eventos para a página de Exponencial
 var botaoExponencial = document.getElementById('calcularExponencial');
 if (botaoExponencial) {
-    botaoExponencial.addEventListener('click', function () {
-        var base = document.getElementById('base').value;
-        var expoente = document.getElementById('expoente').value;
-        var resultado = calcularExponencial(base, expoente);
-        document.getElementById('resultadoExponencial').innerText = resultado;
-    });
+  botaoExponencial.addEventListener('click', function () {
+    var base = document.getElementById('base').value;
+    var expoente = document.getElementById('expoente').value;
+    var resultado = calcularExponencial(base, expoente);
+    document.getElementById('resultadoExponencial').innerText = resultado;
+  });
 }
 
 // manipuladores de eventos para a página de Raiz Quadrada
 var botaoRaizQuadrada = document.getElementById('calcularRaizQuadrada');
 if (botaoRaizQuadrada) {
-    botaoRaizQuadrada.addEventListener('click', function () {
-        var numero = document.getElementById('numero').value;
-        var resultado = calcularRaizQuadrada(numero);
-        document.getElementById('resultadoRaizQuadrada').innerText = resultado;
-    });
+  botaoRaizQuadrada.addEventListener('click', function () {
+    var numero = document.getElementById('numero').value;
+    var resultado = calcularRaizQuadrada(numero);
+    document.getElementById('resultadoRaizQuadrada').innerText = resultado;
+  });
 }
 
 var botaoLimparBaskara = document.getElementById('limparBaskara');
 if (botaoLimparBaskara) {
-    botaoLimparBaskara.addEventListener('click', function () {
-        document.getElementById('a').value = '';
-        document.getElementById('b').value = '';
-        document.getElementById('c').value = '';
-        document.getElementById('resultadoBaskara').innerText = '';
-    });
+  botaoLimparBaskara.addEventListener('click', function () {
+    document.getElementById('a').value = '';
+    document.getElementById('b').value = '';
+    document.getElementById('c').value = '';
+    document.getElementById('resultadoBaskara').innerText = '';
+  });
 }
 
