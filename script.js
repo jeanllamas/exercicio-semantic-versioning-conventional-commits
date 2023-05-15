@@ -22,11 +22,11 @@ function calcularHipotenusa(a, b) {
 }
 
 function calcularLogaritmo(base, numero) {
-  return "O valor do logaritmo é: ";
+  return "O valor do logaritmo é: " + Math.log(numero) / Math.log(base);
 }
 
 function calcularExponencial(base, expoente) {
-  return "O valor da exponencial é: ";
+  return "O valor da exponencial é: " + Math.pow(base, expoente);
 }
 
 function calcularRaizQuadrada(numero) {
